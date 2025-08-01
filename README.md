@@ -33,7 +33,6 @@ A modern, full-stack fundraising portal built for intern management and donation
 - **Frontend**: React 19 + TypeScript
 - **Styling**: Tailwind CSS + shadcn/ui components
 - **Routing**: React Router DOM
-- **Icons**: Lucide React
 - **Build Tool**: Vite
 - **Package Manager**: npm
 
@@ -41,12 +40,17 @@ A modern, full-stack fundraising portal built for intern management and donation
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd fund-portal
+   git clone https://github.com/Sonudhukia143/Fund-Raising-Portal
+   cd Fund-Raising-Portal
    ```
 
 2. **Install dependencies**
    ```bash
+   cd frontend
+   npm install
+   ```
+   ```bash
+   cd backend 
    npm install
    ```
 
@@ -54,9 +58,13 @@ A modern, full-stack fundraising portal built for intern management and donation
    ```bash
    npm run dev
    ```
+   ```bash
+   vercel dev
+   ```
 
 4. **Open your browser**
-   Navigate to `http://localhost:5173`
+   Navigate to `http://localhost:5173` for frontend
+   Navigate to `http://localhost:3000` for backend
 
 ## 🏗️ Project Structure
 
@@ -110,21 +118,6 @@ fund-portal/
 ### Frontend Hosting Options:
 - **Vercel**: `vercel --prod`
 - **Netlify**: `netlify deploy --prod`
-- **GitHub Pages**: Configure in repository settings
-
-### Backend Integration:
-The current version uses mock data. For production:
-1. Replace mock API calls in `src/services/api.ts`
-2. Connect to your preferred backend (Node.js, Python, etc.)
-3. Update environment variables for API endpoints
-
-## 📱 Responsive Design
-
-The application is fully responsive and works on:
-- 📱 Mobile devices (320px+)
-- 📱 Tablets (768px+)
-- 💻 Desktop (1024px+)
-- 🖥️ Large screens (1440px+)
 
 ## 🎨 Design System
 
@@ -141,7 +134,6 @@ The application is fully responsive and works on:
 
 ## 🔮 Future Enhancements
 
-- [ ] Real backend integration (Node.js/Express)
 - [ ] Database integration (MongoDB/PostgreSQL)
 - [ ] Real-time updates with WebSocket
 - [ ] Payment gateway integration

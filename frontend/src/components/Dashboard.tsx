@@ -33,7 +33,7 @@ export default function Dashboard() {
     setFetching(true);
 
     const fetchData = async () => {
-      const res = await fetch("http://localhost:3000/api/data");
+      const res = await fetch("https://fund-raising-portal.vercel.app/api/data");
       const data = await res.json();
 
       console.log(data.data1);
